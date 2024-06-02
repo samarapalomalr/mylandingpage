@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/elements.css">
+  <link rel="stylesheet" href="assets/css/classes.css">
+  <link rel="stylesheet" href="assets/css/menu.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+  <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+  <label class="close-menu-label" for="close-menu" title="close menu"></label>
+
+  <aside class="menu white-bg">
+    <div class="main-content menu-content">
+      <h1 onclick="getElementById('close-menu').checked = false;">
+        <a href="#home">HOME</a>
+      </h1>
+    
+      <nav>
+        <ul onclick="getElementById('close-menu').checked = false;">
+          <li><a href="#intro">intro</a></li>
+          <li><a href="#grid-one">grid one</a></li>
+          <li><a href="#gallery">gallery</a></li>
+          <li><a href="#grid-two">grid two</a></li>
+          <li><a href="#more">more about</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </aside>
+  
+  <div class="menu-spacing"></div>
+
+  <section id="home" class="intro main-bg section"> 
+    <div class="main-content intro-content">
+      <div class="intro-text-content"> 
+        <h2>Desenvolvimento web</h2>
+        <p>Desenvolvimento Web, criado com HTML e CSS! Explore minha nova landing page  
+          apresentando design responsivo, layouts e interações dinâmicas. Espero que você 
+          inspire-se e descubra o poder dessas linguagens de marcação e estilo. 
+        </p>
+        <p>Bem-vindo ao universo do HTML e CSS!</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="intro" class="white-bg section"> 
+    <div class="main-content top3-content"> 
+      <h2>Conceitos Básicos de HTML e CSS</h2>
+      <p>HTML (Hypertext Markup Language) e CSS (Cascading Style Sheets) são os conceitos
+      por trás de praticamente todas as páginas da web que você vê hoje. HTML fornece a estrutura e 
+      conteúdo de uma página web, enquanto o CSS é responsável pelo estilo e aparência visual.</p>
+    </div>
+  </section>
+
+  <section id="grid-one" class="grid-one main-bg section">
+    <div class="main-content grid-one-content"> 
+      <h2 class="grid-main-heading">CSS Grid Layout</h2>
+      <p class="grid-description">Uma ferramenta que permite criar layouts em páginas da web.</p>
+      
+      <div class="grid">
+        <article class="GRID">
+        <p>CSS Grid Layout introduz um sistema de grade bidimensional onde os elementos HTML podem ser 
+        organizados em linhas e colunas, proporcionando maior controle sobre o posicionamento e dimensionamento 
+        desses elementos na página. Com CSS Grid, você pode definir áreas específicas da sua página e 
+        posicionar elementos dentro deles com precisão, criando layouts mais elaborados que são adaptáveis ​​a 
+        diferentes tamanhos de tela e dispositivos...</p>
+        </article>
+        <article class="GRID">
+        <p>Além disso, CSS Grid oferece recursos avançados como alinhamento de itens, espaçamento automático entre 
+        células de grade, sobreposição de elementos e a capacidade de criar layouts complexos com menos código do que outros layouts tradicionais..
+        </p>
+        </article>
+        <article class="GRID">
+        <p>Resumindo, CSS Grid é uma tecnologia moderna e poderosa que facilita a criação de designs sofisticados e 
+        layouts responsivos em páginas da web, dando aos desenvolvedores mais controle e flexibilidade na organização do conteúdo.</p>
+        </article>
+      </div>
+    </div>
+  </section> 
+
+  <section id="gallery" class="grid-one white-bg section">
+    <div class="main-content grid-one-content"> 
+      <h2 class="grid-main-heading">Galley</h2>
+    
+      <div class="grid">
+        <div class="gallery-img">
+          <img src="../mysite/assets/img/download.jpeg" alt="computaçao">
+        </div> 
+
+        <div class="gallery-img">
+          <img src="../mysite/assets/img/download (3).jpeg" alt="livro">
+        </div> 
+
+        <div class="gallery-img">
+          <img src="../mysite/assets/img/download (1).jpeg" alt="codigo">
+        </div> 
+
+        <div class="gallery-img">
+          <img src="../mysite/assets/img/download (2).jpeg" alt="mundo">
+        </div> 
+
+        <div class="gallery-img">
+          <img src="../mysite/assets/img/images (2).jpeg" alt="universo">
+        </div> 
+
+        <div class="gallery-img">
+          <img src="../mysite/assets/img/chatboot.jpeg" alt="chat">
+        </div> 
+
+      </div>
+    </div>
+  </section> 
+
+  <section id="grid-two" class="grid-one main-bg section">
+    <div class="main-content grid-one-content"> 
+      <h2 class="grid-main-heading">Aplicações de CSS Grid</h2>
+      
+      <div class="grid">
+        <article class="gridT">
+         <h3>Layouts responsivos e flexíveis</h3>
+         <p>Use CSS Grid para criar layouts que automaticamente 
+         ajusta a diferentes tamanhos de tela e dispositivos, garantindo 
+         uma experiência consistente para usuários em desktops, tablets e smartphones.</p>
+        </article>
+        <article class="gridT">
+          <h3>Grades e galerias de imagens</h3>
+          <p>Implemente grades de imagens ou galerias de fotos usando CSS Grid para melhorar visualmente, bem como
+          organizar e exibir imagens de maneira ordenada e esteticamente atraente.</p>
+        </article>
+        <article class="gridT">
+          <h3>Painéis de administração e dashboard</h3>
+          <p>Crie painéis de administração ou dashboards com CSS Grid para organizar informações 
+          e métricas de forma clara e intuitiva, facilitando análises e tomadas de decisão 
+          para usuários.</p>
+        </article>
+      </div>
+    </div>
+  </section> 
+
+  <section id="more" class="white-bg section"> 
+    <div class="main-content top3-content"> 
+      <h2>Mais sobre</h2>
+      <p>Em HTML, elementos como p(parágrafo) e div(divisão) são usados ​​para organizar 
+      conteúdo, enquanto em CSS, propriedades como cor, fonte e layout são definidas para 
+      estilizar e posicionar esses elementos. Dominar esses conceitos básicos é essencial para 
+      qualquer pessoa interessada em desenvolvimento web e é o primeiro passo para criar designs bonitos e 
+      sites funcionais.</p>
+  </section>
+
+  <section id="contact" class="intro main-bg section"> 
+    <div class="main-content intro-content">
+      <div class="intro-text-content"> 
+        <p>Como estudante de Ciência da Computação, estou aprendendo desenvolvimento web. Esta é uma oportunidade 
+        para que eu não apenas expanda meu conhecimento teórico, mas também aplique minhas habilidades na prática. 
+        Sinta-se à vontade para entrar em contato comigo pelos canais abaixo.</p>
+      </div>
+      <div class="intro-img">
+        <img src="../mysite/assets/img/m.jpg" alt="woman">
+      </div>
+      <div id="contact-form" class="contact-form">
+        <a href="https://github.com/samarapalomalr" target="_blank">GitHub</a>
+        <a href="https://www.instagram.com/samarapalomalr/" target="_blank">Instagram</a>
+        <a href="https://www.linkedin.com/in/samara-paloma-16b6b51a0/" target="_blank">Linkedin</a>
+      </div>
+    </div>
+  </section>
+</body> 
+</html>
